@@ -8,7 +8,8 @@ from loader import load_config, load_from_csv
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Train and test an instance of ID3 decision tree or random forest"
+                                                 " on an arbitrary dataset and custom configuration")
 
     parser.add_argument("--train",
                         type=str,
